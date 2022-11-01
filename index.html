@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan XP</title>
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <nav
+            class="d-none d-xl-flex h-100 flex-column justify-content-between top-0 left-0 position-fixed top-0 left-0">
+            <div class="logo w-100 d-flex justify-content-center px-4 px-lg-3 px-xml-4 pt-5"><a href="#"
+                    class="d-flex justify-content-center"><img src="assets/logo-planxp.png" alt="Logo"
+                        class="w-70 w-xxl-75"></a>
+            </div>
+            <div class="mx-4 ps-3 ps-md-2 ps-xxl-4"><a href="#quemsomos"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        01.
+                    </span> <span class="quemsomos text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Quem somos
+                    </span></a> <a href="#oquefazemos"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        02.
+                    </span> <span class="oquefazemos text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /O que fazemos
+                    </span></a> <a href="#plannews"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        03.
+                    </span> <span class="plannews text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Plan News
+                    </span></a> <a href="#nossosclientes"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        04.
+                    </span> <span
+                        class="nossosclientes text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Nossos clientes
+                    </span></a> <a href="#contato"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        05.
+                    </span> <span class="contato text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Contato
+                    </span></a></div>
+            <div class=" w-100 d-flex justify-content-center py-4 py-lg-3 py-xxl-4 bottom-button fz-medium "><a
+                    href="#form-two"
+                    class="mx-3 my-2   px-3 ps-xxl-4  position-relative w-100 text-decoration-none d-flex"><span
+                        class="position-absolute text-secondary lh-1 fz-xxlarge fw-bold number-item">
+                        ;)
+                    </span> <span class="ps-0 pt-1  pe-3  text-primary-planxp fz-small fz-xxl-medium lh-sm">
+
+                        Que tal inovar com a gente?
+                    </span> <i class="bi bi-arrow-right-short position-absolute end-0 top-100 text-light arrow"></i></a>
+            </div>
+        </nav>
+        <header
+            class="position-relative py-1 d-flex bg-bg d-xl-none justify-content-between align-items-center top-0 left-0"
+            style="z-index: 12;">
+            <div class="logo py-2 w-25 d-flex justify-content-center pt-3"><img src="assets/logo-planxp.png" alt="Logo"
+                    class="w-75"></div>
+            <div id="menu-container" class="pe-3 py-auto trigger-menu"><button id="menu-active">
+                    <div id="hamburger"></div>
+                </button></div>
+        </header>
+        <nav class="top-0 end-0 position-fixed d-flex flex-column align-items-center h-100 bg-bg menu-mobile d-xl-none">
+            <div class="mx-3 ps-5 my-auto menu-width"><a href="#quemsomos"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        01.
+                    </span> <span class="quemsomos text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Quem somos
+                    </span></a> <a href="#oquefazemos"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        02.
+                    </span> <span class="oquefazemos text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /O que fazemos
+                    </span></a> <a href="#plannews"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        03.
+                    </span> <span class="plannews text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Plan News
+                    </span></a> <a href="#nossosclientes"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        04.
+                    </span> <span
+                        class="nossosclientes text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Nossos clientes
+                    </span></a> <a href="#contato"
+                    class="menu-close position-relative w-100 text-decoration-none py-4 d-flex my-xxl-2"><span
+                        class="position-absolute text-secondary fz-xxlarge fw-bold number-item">
+                        05.
+                    </span> <span class="contato text-light menu-active fz-lg-msmall fz-xxl-msmall text-uppercase">
+                        /Contato
+                    </span></a></div>
+            <div class=" w-100 d-flex justify-content-center py-4 py-lg-3 py-xxl-4 bottom-button fz-medium menu-width">
+                <a href="#contato" class="mx-3 my-2 px-5 position-relative w-100 text-decoration-none d-flex"><span
+                        class="position-absolute text-secondary lh-1 fz-xxlarge fw-bold number-item">
+                        ;)
+                    </span> <span class="ps-0 text-primary-planxp fz-medium lh-sm">
+                        Que tal inovar com a gente?
+                    </span> <i class="bi bi-arrow-right-short position-absolute end-0 top-100 text-light arrow"></i></a>
+            </div>
+        </nav>
+        <div class="content--section d-flex flex-column justify-content-center">
+            <div class="m-auto w-100" style="max-width: 1700px;">
+                <main>
+                    <div class="px-4 px-md-5 d-flex flex-column mt-5 gap-5">
+                        <section id="oquefazemos"
+                            class="row m-0 p-0 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between px-xl-5"
+                            style="min-height: 100vh;">
+                            <div class="col-12 col-lg-5 p-0 m-0 d-flex flex-column justify-content-center">
+                                <div class="pe-xxl-5">
+                                    <div
+                                        class="position-relative w-auto text-decoration-none me-4 d-flex fz-xxl-xxxlarge fz-xxxlarge">
+                                        <span style="color: transparent; width: 0px;">no</span> <span
+                                            class="position-absolute text-secondary fw-bold number-item fz-xxl-4xlarge lh-xxl-1 fz-xxxlarge">
+                                            02.
+                                        </span>
+                                        <div class="d-flex flex-column my-auto" style="z-index: 3;">
+                                            <span class="fz-small">/O que fazemos</span>
+                                            <span
+                                                class="text-light fz-xmedium fz-xl-large fz-xxl-xlarge text-primary-planxp"
+                                                style="text-transform: capitalize;">
+                                                /Games
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="fz-xmedium text-primary-planxp">Desenvolvimento de games digitais.</p>
+                                    <p class="fz-small text-primary-planxp">Empresa especialista em desenvolvimento
+                                        games digitais e gamificação.</p>
+                                    <p class="fz-xsmall"> Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Quis atque reiciendis a repellat officiis explicabo culpa
+                                        omnis nesciunt vitae nostrum. Asperiores, accusantium odit recusandae alias
+                                        rerum veniam eveniet iste earum.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-12 col-lg-7 p-0 ps-md-3 m-0 d-flex flex-column justify-content-center mt-3 mt-lg-0">
+                                <div class="row">
+                                    <div class="mb-4 col mb-sm-0">
+                                        <div>
+                                            <div class="h-100 mb-4">
+                                                <div class="position-relative triangle-wrapper"><img
+                                                        src="assets/fazemos1.png" alt="" class="w-100"
+                                                        style="max-height: 200px; object-fit: cover;">
+                                                </div>
+                                            </div>
+                                            <div class="text-white fz-xxsmall fz-md-xmmsmall fz-xxl-xsmall lh-lg">
+                                                <p>A <span class="fw-bold">PlanXP</span> tem uma equipe qualificada para
+                                                    o <span class="fw-bold">desenvolvimento de jogos
+                                                        digitais</span> para <span class="fw-bold">dispositivos
+                                                        móveis</span> (smartphones, tablets e afins).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 col mb-sm-0">
+                                        <div>
+                                            <div class="h-100 mb-4">
+                                                <div class="position-relative"><img src="assets/fazemos2.png" alt=""
+                                                        class="w-100 h-100"
+                                                        style="max-height: 200px; object-fit: cover;">
+                                                </div>
+                                            </div>
+                                            <div class="text-white fz-xxsmall fz-md-xmmsmall fz-xxl-xsmall lh-lg">
+                                                <p>Desenvolvemos games para anunciar seus produtos e serviços, através
+                                                    da <span class="fw-bold">gamificação</span> (aplicações que utilizam
+                                                    dinâmicas de jogos para
+                                                    engajamento de usuários, resolução de problemas e melhoria no
+                                                    aprendizado).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 col mb-sm-0">
+                                        <div>
+                                            <div class="h-100 mb-4">
+                                                <div class="position-relative triangle-wrapper"><img
+                                                        src="assets/fazemos3.png" alt="" class="w-100"
+                                                        style="max-height: 200px; object-fit: cover;">
+                                                </div>
+                                            </div>
+                                            <div class="text-white fz-xxsmall fz-md-xmmsmall fz-xxl-xsmall lh-lg">
+                                                <p>Utilizando as últimas tecnologias para a <span
+                                                        class="fw-bold">criação de games</span>,
+                                                    trabalhamos de acordo com as necessidades dos clientes, sempre
+                                                    buscando oferecer o resultado que ele busca.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 col mb-sm-0">
+                                        <div class="mt-5">
+                                            <div><img src="assets/games.webp" alt="" class="mb-2 w-25 mt-4">
+                                                <div class="text-white fz-xmedium fz-sm-medium fz-xxl-xmedium  mt-2">
+                                                    Experimente inovar com a <span class="fw-bold">PlanXP</span> para
+                                                    <span class="fw-bold">desenvolver os seus jogos
+                                                        digitais!</span>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                                class="text-primary-planxp fz-xsmall fz-md-xmmsmall fz-xxl-xsmall text-uppercase text-decoration-none">Entre
+                                                em contato agora mesmo
+                                                <img src="assets/arrow-right-bottom.svg" alt="Abrir"
+                                                    class="d-inline"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="plannews" class="d-flex  m-0 p-0 align-items-center min-vh-100 px-xl-5">
+                            <div>
+                                <div
+                                    class="d-flex flex-column flex-sm-row mb-4 mb-xl-0 align-items-start align-items-sm-center gap-3">
+                                    <div
+                                        class="position-relative w-auto text-decoration-none me-4 d-flex fz-xxl-xxxlarge fz-xxxlarge">
+                                        <span style="color: transparent; width: 0px;">no</span> <span
+                                            class="position-absolute text-secondary fw-bold number-item fz-xxl-4xlarge lh-xxl-1 fz-xxxlarge">
+                                            03.
+                                        </span>
+                                        <div class="d-flex flex-column my-auto" style="z-index: 3;">
+                                            <span class="fz-small">/Plan News</span>
+                                            <span
+                                                class="text-light fz-xmedium fz-xl-large fz-xxl-xlarge text-primary-planxp"
+                                                style="text-transform: capitalize;">
+                                                /Cases Games
+                                            </span>
+                                        </div>
+                                    </div> <a href="/blog"
+                                        class="text-primary-planxp fz-xsmall fz-md-xmsmall fz-xxl-xsmall fz-xsmall text-uppercase text-decoration-none lh-1 mb-1 mt-lg-2 mt-xxl-3 pt-md-2">
+                                        clique aqui para ver todo o blog
+                                        <img src="assets/arrow-right-bottom.svg" alt="" class="d-inline"></a>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-4 mw-lg-20">
+                                        <div class="bg-secondary h-100">
+                                            <div class="position-relative triangle-wrapper"><img src="assets/cases1.png"
+                                                    alt="" class="w-100" style="max-height: 180px; object-fit: cover;">
+                                                <div class="triangle"></div> <img
+                                                    src="assets/realidadevirtual.webp" alt=""
+                                                    class="icon">
+                                            </div>
+                                            <div class="p-3 p-md-2 p-xxl-3"><span
+                                                    class="bg-primary-planxp fz-xmsmall fz-xxsmall fz-xxl-xmsmall fw-medium text-bg px-1 p-xxl-1 text-uppercase">SKA</span>
+                                                <p class="text-primary-planxp my-2 fz-small fz-md-mmsmall fz-xxl-small">
+                                                    Plan cria novo site da SKA</p>
+                                                <p class="card-text lh-lg fz-xmmsmall fz-md-xmsmall fz-xxl-xsmall mb-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ullam
+                                                    voluptas voluptatem quasi alias ipsa numquam, eos veritatis
+                                                    exercitationem earum, provident recusandae praesentium minus fuga,
+                                                    maxime aut modi officiis magni.</p> <a
+                                                    href="/blog/detalhes/video-do-tenis-umbro-pro-5-bump-e-feito-pela-plan-xp"
+                                                    class="text-nowrap text-primary-planxp fz-xmsmall fz-md-xxsmall fz-xxl-xsmall text-decoration-none text-uppercase">Saiba
+                                                    mais <img src="assets/arrow-right-bottom.svg" alt=""
+                                                        class="d-inline arrow-card-blog"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mw-lg-20">
+                                        <div class="bg-secondary h-100">
+                                            <div class="position-relative triangle-wrapper"><img src="assets/cases2.png"
+                                                    alt="" class="w-100" style="max-height: 180px; object-fit: cover;">
+                                                <div class="triangle"></div> <img
+                                                    src="assets/realidadevirtual.webp" alt=""
+                                                    class="icon">
+                                            </div>
+                                            <div class="p-3 p-md-2 p-xxl-3"><span
+                                                    class="bg-primary-planxp fz-xmsmall fz-xxsmall fz-xxl-xmsmall fw-medium text-bg px-1 p-xxl-1 text-uppercase">Tintas
+                                                    Killing</span>
+                                                <p class="text-primary-planxp my-2 fz-small fz-md-mmsmall fz-xxl-small">
+                                                    Plan cria novo site para Tintas Kiling</p>
+                                                <p class="card-text lh-lg fz-xmmsmall fz-md-xmsmall fz-xxl-xsmall mb-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad est
+                                                    sint inventore placeat cumque deserunt obcaecati pariatur, suscipit
+                                                    vel praesentium reprehenderit, nesciunt labore aut, vero quo autem!
+                                                    Asperiores, eum!</p> <a
+                                                    href="/blog/detalhes/fila-faz-parceria-com-plan-xp-para-a-criacao-de-videos-para-conferencia"
+                                                    class="text-nowrap text-primary-planxp fz-xmsmall fz-md-xxsmall fz-xxl-xsmall text-decoration-none text-uppercase">Saiba
+                                                    mais <img src="assets/arrow-right-bottom.svg" alt=""
+                                                        class="d-inline arrow-card-blog"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mw-lg-20">
+                                        <div class="bg-secondary h-100">
+                                            <div class="position-relative triangle-wrapper"><img src="assets/cases3.png"
+                                                    alt="" class="w-100" style="max-height: 180px; object-fit: cover;">
+                                                <div class="triangle"></div> <img
+                                                    src="assets/realidadevirtual.webp" alt=""
+                                                    class="icon">
+                                            </div>
+                                            <div class="p-3 p-md-2 p-xxl-3"><span
+                                                    class="bg-primary-planxp fz-xmsmall fz-xxsmall fz-xxl-xmsmall fw-medium text-bg px-1 p-xxl-1 text-uppercase">Cargo
+                                                    BR</span>
+                                                <p class="text-primary-planxp my-2 fz-small fz-md-mmsmall fz-xxl-small">
+                                                    Estamos desenvolvendo o novo site da CargoBR
+                                                </p>
+                                                <p class="card-text lh-lg fz-xmmsmall fz-md-xmsmall fz-xxl-xsmall mb-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum
+                                                    saepe voluptas itaque dolore doloremque nihil exercitationem,
+                                                    facilis ex quia voluptatum possimus aliquid quisquam repudiandae!
+                                                    Fugiat maxime deserunt qui mollitia.</p> <a
+                                                    href="/blog/detalhes/td-game-criado-pelo-grupo-plan-marketing-e-premiado-na-aberje-2021"
+                                                    class="text-nowrap text-primary-planxp fz-xmsmall fz-md-xxsmall fz-xxl-xsmall text-decoration-none text-uppercase">Saiba
+                                                    mais <img src="assets/arrow-right-bottom.svg" alt=""
+                                                        class="d-inline arrow-card-blog"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mw-lg-20">
+                                        <div class="bg-secondary h-100">
+                                            <div class="position-relative triangle-wrapper"><img src="assets/cases4.png"
+                                                    alt="" class="w-100" style="max-height: 180px; object-fit: cover;">
+                                                <div class="triangle"></div> <img
+                                                    src="assets/realidadevirtual.webp" alt=""
+                                                    class="icon">
+                                            </div>
+                                            <div class="p-3 p-md-2 p-xxl-3"><span
+                                                    class="bg-primary-planxp fz-xmsmall fz-xxsmall fz-xxl-xmsmall fw-medium text-bg px-1 p-xxl-1 text-uppercase">Xalingo</span>
+                                                <p class="text-primary-planxp my-2 fz-small fz-md-mmsmall fz-xxl-small">
+                                                    Clubinho Xalingo com novidades
+                                                </p>
+                                                <p class="card-text lh-lg fz-xmmsmall fz-md-xmsmall fz-xxl-xsmall mb-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum
+                                                    saepe voluptas itaque dolore doloremque nihil exercitationem,
+                                                    facilis ex quia voluptatum possimus aliquid quisquam repudiandae!
+                                                    Fugiat maxime deserunt qui mollitia.</p> <a
+                                                    href="/blog/detalhes/td-game-criado-pelo-grupo-plan-marketing-e-premiado-na-aberje-2021"
+                                                    class="text-nowrap text-primary-planxp fz-xmsmall fz-md-xxsmall fz-xxl-xsmall text-decoration-none text-uppercase">Saiba
+                                                    mais <img src="assets/arrow-right-bottom.svg" alt=""
+                                                        class="d-inline arrow-card-blog"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-4 mw-lg-20">
+                                        <div class="bg-secondary h-100">
+                                            <div class="position-relative triangle-wrapper"><img src="assets/cases5.png"
+                                                    alt="" class="w-100" style="max-height: 180px; object-fit: cover;">
+                                                <div class="triangle"></div> <img
+                                                    src="assets/realidadevirtual.webp" alt=""
+                                                    class="icon">
+                                            </div>
+                                            <div class="p-3 p-md-2 p-xxl-3"><span
+                                                    class="bg-primary-planxp fz-xmsmall fz-xxsmall fz-xxl-xmsmall fw-medium text-bg px-1 p-xxl-1 text-uppercase">Aromatic</span>
+                                                <p class="text-primary-planxp my-2 fz-small fz-md-mmsmall fz-xxl-small">
+                                                    Novo site da Aromatic no ar</p>
+                                                <p class="card-text lh-lg fz-xmmsmall fz-md-xmsmall fz-xxl-xsmall mb-2">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                                                    neque quia ipsum, sed dignissimos mollitia, pariatur sint beatae
+                                                    sequi labore quae dolorem earum fuga, sit culpa repellendus aliquid
+                                                    accusamus laboriosam!</p> <a
+                                                    href="/blog/detalhes/wolfstore-esta-no-metaverso"
+                                                    class="text-nowrap text-primary-planxp fz-xmsmall fz-md-xxsmall fz-xxl-xsmall text-decoration-none text-uppercase">Saiba
+                                                    mais <img src="assets/arrow-right-bottom.svg" alt=""
+                                                        class="d-inline arrow-card-blog"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div id="contato"
+                            class="row d-flex flex-column flex-lg-row justify-content-lg-between align-items-center m-0 p-0 px-xl-5"
+                            style="min-height: 100vh;">
+                            <div class="col-12 p-0 m-0 col-md-5 d-flex flex-column justify-content-center">
+                                <div class="pe-0">
+                                    <div class="position-relative">
+                                        <div id="form-one">
+                                            <div
+                                                class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                                                <div
+                                                    class="position-relative w-auto text-decoration-none me-4 d-flex fz-xxl-xxxlarge fz-xxxlarge">
+                                                    <span style="color: transparent; width: 0px;">no</span> <span
+                                                        class="position-absolute text-secondary fw-bold number-item fz-xxl-4xlarge lh-xxl-1 fz-xxxlarge">
+                                                        05.
+                                                    </span>
+                                                    <div class="d-flex flex-column my-auto" style="z-index: 3;"><span
+                                                            class="text-light fz-xmedium fz-xl-large fz-xxl-xlarge text-primary-planxp"
+                                                            style="text-transform: capitalize;">
+                                                            /Contato
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                            <p class="fz-xsmall fz-md-xmmsmall fz-xxl-xsmall text-light">Gostou de saber
+                                                mais sobre as inovações tecnológicas
+                                                e também quer oferecer novas experiências aos seus clientes? Então entre
+                                                em contato e marque um encontro
+                                                real conosco para conversarmos sobre as infinitas possibilidades do
+                                                mundo virtual.</p>
+                                            <form action="/contact" method="post" class="row m-0 p-0 text-light"><label
+                                                    class="col-12 p-1 my-1 mb-2"><span
+                                                        class="fz-small fz-md-xsmall fz-xxl-small d-block mb-1">Nome:</span>
+                                                    <div class="m-0 p-0 w-100 position-relative overflow-hidden"><input
+                                                            type="text" name="name"
+                                                            class="w-100 py-2 py-md-1 px-1 text-light fz-xsmall">
+                                                        <div class="corner"></div>
+                                                    </div>
+                                                </label> <label class="col-12 col-md-6 pe-md-3 p-1 my-1 mb-2"><span
+                                                        class="fz-small fz-md-xsmall fz-xxl-small d-block mb-1">E-mail:</span>
+                                                    <div class="m-0 p-0 w-100 position-relative overflow-hidden"><input
+                                                            type="email" name="email"
+                                                            class="w-100 py-2 py-md-1 px-1 text-light fz-xsmall">
+                                                        <div class="corner"></div>
+                                                    </div>
+                                                </label> <label class="col-12 col-md-6 ps-md-3 p-1 my-1 mb-2"><span
+                                                        class="fz-small fz-md-xsmall fz-xxl-small d-block mb-1">Telefone:</span>
+                                                    <div class="m-0 p-0 w-100 position-relative overflow-hidden"><input
+                                                            type="text" name="phone"
+                                                            class="w-100 py-2 py-md-1 px-1 text-light fz-xsmall">
+                                                        <div class="corner"></div>
+                                                    </div>
+                                                </label> <label class="col-12 p-1 my-1 mb-2"><span
+                                                        class="fz-small fz-md-xsmall fz-xxl-small d-block mb-1">Mensagem:</span>
+                                                    <div class="m-0 p-0 w-100 position-relative overflow-hidden">
+                                                        <textarea cols="30" rows="5" name="message"
+                                                            class="w-100 py-2 py-md-1 px-1 text-light fz-xsmall"></textarea>
+                                                        <div class="corner"></div>
+                                                    </div>
+                                                </label>
+                                                <div class="col-12 p-1 my-1"></div> <label
+                                                    class="col-12 p-1 my-1"><input type="submit" value="Enviar"
+                                                        class="fz-xsmall fz-md-xmmsmall fz-xxl-xsmall text-primary-planxp text-uppercase">
+                                                    <img src="assets/arrow-right-bottom.svg" alt="Saiba mais"
+                                                        class="d-inline"></label>
+                                                <!---->
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex p-0 flex-column justify-content-center">
+                                <div class="row m-0">
+                                    <div class="mb-5 mt-2 col-6 col-sm-4">
+                                        <div class="details d-flex flex-column justify-content-between h-100">
+                                            <div>
+                                                <p
+                                                    class="text-primary-planxp fz-medium details-text-icon d-flex flex-row align-items-center">
+                                                    <span>Siga-nos</span>
+                                                </p>
+                                            </div>
+                                            <div class="text-white fz-xsmall fz-md-xmsmall fz-xxl-xsmall lh-lg">
+                                                Fique sempre por dentro de todas as novidades da Plan XP e de todas
+                                                empresas do Grupo Plan Marketing.
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="position-absolute w-100 d-flex top-0">
+                                                    <div
+                                                        class="icon-link--wrapper row m-0 p-0 pe-ul-5 d-flex justify-content-between w-100 my-1">
+                                                        <a href="https://www.facebook.com/planmkt" target="_blank"
+                                                            class="col m-0 icon-link--rounded w-auto"><img src="assets/facebook.png" alt="Facebook"></a>
+                                                        <a href="https://www.instagram.com/planmkt" target="_blank"
+                                                            class="col m-0 icon-link--rounded w-auto"><img src="assets/instagram.png" alt="Instagram"></a>
+                                                        <a href="https://www.youtube.com/planmkt" target="_blank"
+                                                            class="col m-0 icon-link--rounded w-auto"><img src="assets/youtube.png" alt="YouTube"></a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase m-0"
+                                                    style="color: transparent; width: 0px;">none</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 mt-2 col-6 col-sm-4">
+                                        <div class="details d-flex flex-column justify-content-between h-100">
+                                            <div>
+                                                <p
+                                                    class="text-primary-planxp fz-medium details-text-icon d-flex flex-row align-items-center">
+                                                    <span class="fz-xmsmall"><img src="assets/place.png" class="bi bi-geo-alt-fill"
+                                                            style="font-size: 1rem;"></img></span>/
+                                                    <span>RS</span>
+                                                </p>
+                                            </div>
+                                            <div class="text-white fz-xsmall fz-md-xmsmall fz-xxl-xsmall lh-lg">
+                                                Rua Onze de Junho, 243 <br> Novo Hamburgo/RS <br> Brasil <br> +55 51
+                                                98229.0400
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="position-absolute w-100 d-flex top-0">
+                                                    <div
+                                                        class="icon-link--wrapper row m-0 p-0 pe-ul-5 d-flex justify-content-between w-100 my-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase m-0"
+                                                    style="color: transparent; width: 0px;">none</p> <a
+                                                    href="https://www.google.com/maps/place/R.+Onze+de+Junho,+243+-+Oper%C3%A1rio,+Novo+Hamburgo+-+RS,+93315-130/@-29.6796239,-51.1356049,17z/data=!3m1!4b1!4m5!3m4!1s0x951943a1494f1ae7:0xc94882b9d1df84"
+                                                    target="_blank"
+                                                    class="text-primary-planxp lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase">
+                                                    Ver no google maps <img src="assets/arrow-right-bottom.svg"
+                                                        alt="Saiba Mais" class="d-inline"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 mt-2 col-6 col-sm-4">
+                                        <div class="details d-flex flex-column justify-content-between h-100">
+                                            <div>
+                                                <p
+                                                    class="text-primary-planxp fz-medium details-text-icon d-flex flex-row align-items-center">
+                                                    <span class="fz-xmsmall"><img src="assets/place.png" class="bi bi-geo-alt-fill"
+                                                            style="font-size: 1rem;"></img></span>/
+                                                    <span>SP</span>
+                                                </p>
+                                            </div>
+                                            <div class="text-white fz-xsmall fz-md-xmsmall fz-xxl-xsmall lh-lg">
+                                                Rua Ibijaú, 355/Sala 1309 <br> São Paulo/SP <br> Brasil <br> +55 11
+                                                98871.8556
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="position-absolute w-100 d-flex top-0">
+                                                    <div
+                                                        class="icon-link--wrapper row m-0 p-0 pe-ul-5 d-flex justify-content-between w-100 my-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase m-0"
+                                                    style="color: transparent; width: 0px;">none</p> <a
+                                                    href="https://www.google.com/maps/place/Av.+Ibija%C3%BA,+355+-+1309+-+Indian%C3%B3polis,+S%C3%A3o+Paulo+-+SP,+04524-020/@-23.6056085,-46.6661242,17.5z/data=!4m5!3m4!1s0x94ce5a05f01ecd4f:0x5046a2620"
+                                                    target="_blank"
+                                                    class="text-primary-planxp lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase">
+                                                    Ver no google maps <img src="assets/arrow-right-bottom.svg"
+                                                        alt="Saiba Mais" class="d-inline"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 mt-2 col-6 col-sm-4">
+                                        <div class="details d-flex flex-column justify-content-between h-100">
+                                            <div><img src="assets/grupo-plan-marketing.webp" alt=""
+                                                    class="mb-3 col-3 col-md-8"></div>
+                                            <div class="text-white fz-xsmall fz-md-xmsmall fz-xxl-xsmall lh-lg">
+                                                A Plan faz parte do Grupo Plan Marketing, um grupo de comunicação
+                                                completo.
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="position-absolute w-100 d-flex top-0">
+                                                    <div
+                                                        class="icon-link--wrapper row m-0 p-0 pe-ul-5 d-flex justify-content-between w-100 my-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase m-0"
+                                                    style="color: transparent; width: 0px;">none</p> <a
+                                                    href="https://planmkt.com.br/"
+                                                    class="text-primary-planxp lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase">
+                                                    Conheça <img src="assets/arrow-right-bottom.svg" alt="Saiba Mais"
+                                                        class="d-inline"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 mt-2 col-6 col-sm-4">
+                                        <div class="details d-flex flex-column justify-content-between h-100">
+                                            <div><img src="assets/logo-planxp.png" alt="" class="mb-3 col-3 col-md-8">
+                                            </div>
+                                            <div class="text-white fz-xsmall fz-md-xmsmall fz-xxl-xsmall lh-lg">
+                                                <p>A Plan XP é especializada em realidade virtual, realidade aumentada e
+                                                    jogos.</p>
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="position-absolute w-100 d-flex top-0">
+                                                    <div
+                                                        class="icon-link--wrapper row m-0 p-0 pe-ul-5 d-flex justify-content-between w-100 my-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase m-0"
+                                                    style="color: transparent; width: 0px;">none</p> <a
+                                                    href="https://planmkt.com.br/planmkt"
+                                                    class="text-primary-planxp lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase">
+                                                    Conheça <img src="assets/arrow-right-bottom.svg" alt="Saiba Mais"
+                                                        class="d-inline"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 mt-2 col-6 col-sm-4">
+                                        <div class="details d-flex flex-column justify-content-between h-100">
+                                            <div><img src="assets/full-up.webp" alt=""
+                                                    class="mb-3 col-3 col-md-8"></div>
+                                            <div class="text-white fz-xsmall fz-md-xmsmall fz-xxl-xsmall lh-lg">
+                                                A FullUp é uma agência especializada em branding design e campanhas.
+                                            </div>
+                                            <div class="position-relative">
+                                                <div class="position-absolute w-100 d-flex top-0">
+                                                    <div
+                                                        class="icon-link--wrapper row m-0 p-0 pe-ul-5 d-flex justify-content-between w-100 my-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase m-0"
+                                                    style="color: transparent; width: 0px;">none</p> <a
+                                                    href="https://planmkt.com.br/fullup"
+                                                    class="text-primary-planxp lh-lg fz-xxsmall fz-md-xmsmall fz-xxl-xsmall text-decoration-none text-uppercase">
+                                                    Conheça <img src="assets/arrow-right-bottom.svg" alt="Saiba Mais"
+                                                        class="d-inline"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap-utils.js"></script>
+</body>
+
+</html>
